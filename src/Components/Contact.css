@@ -1,0 +1,139 @@
+/* Contact.css */
+:root {
+    --bgcolor: rgb(245, 245, 245);
+    --themecolor: #09d6bbfa;
+    --sidebgcolor: #0e1722;
+    --textcolor: #ffffff;
+    --iconbgcolor: #202647;
+    --navcolor: #808080eb;
+  } 
+  
+  #contact {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #333;
+  }
+  
+  .sub-para {
+    text-align: center;
+    font-family:Georgia, serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+  
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .contact-left, .contact-right {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+  }
+  
+  .icon-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .icon12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-right: 10px;
+    color: var(--themecolor);
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--themecolor);
+    border-radius: 50%;
+  }
+  .linkedin-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+  }
+  .linkedin-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .info h5 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .info p {
+    margin: 0;
+    color: black;
+  }
+  
+  .email-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+  }
+  
+  .email-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .map {
+    margin-top: 20px;
+  }
+  
+  .contact-right form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-right form input[type="text"],
+  .contact-right form input[type="email"],
+  .contact-right form input[type="submit"],
+  .contact-right form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .contact-right form input[type="submit"] {
+    background-color: var(--themecolor);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-right form input[type="submit"]:hover {
+    background-color: var(--themecolor)
+  }
+  #msg{
+    margin-top: 28px;
+  }
+  
+  .dark p{
+    color: whitesmoke;
+  }
+  .dark h5{
+     color: whitesmoke;
+  }
+  
+  .dark .linkedin-link{
+    color: whitesmoke;
+  }
+  
+  .dark .email-link{
+    color: whitesmoke;
+  }

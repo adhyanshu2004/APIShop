@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", "sans-serif";
+  scroll-behavior: smooth;
+}
+:root {
+  --bgcolor: grey;
+  --themecolor: #09d6bb;
+  --sidebgcolor: #0e1722;
+  --textcolor: #ffffff;
+  --iconbgcolor: #202647;
+  --navcolor: #808080f4;
+}
+
+/* Nav bar CSS */
+.container {
+  width: 100vw;
+  height: 100px;
+  box-shadow: 0 4px 6px 1px rgba(0, 0, 0, 0.1), 0 2px 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+.navi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navi ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.navi li {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  padding: 10px;
+}
+
+.navi li a {
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  font-size: 17px;
+  transition: 0.7s ease-in;
+  padding-top: 35px;
+}
+
+.navi li a:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.image-icon {
+  font-size: 15px;
+  display: flex;
+}
+
+.image-icon .phone-icon {
+  color: rgba(0, 0, 0, 0.778);
+  position: absolute;
+  right: 105px;
+  top: 32px;
+  border: 3px solid gray;
+  border-radius: 50%;
+  padding: 9px;
+  background-color: rgba(128, 128, 128, 0.883);
+  transition: 0.7s ease-in;
+}
+
+.image-icon .phone-icon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.image-icon .user-icon {
+  color: rgba(0, 0, 0, 0.778);
+  position: absolute;
+  right: 170px;
+  top: 32px;
+  border: 3px solid gray;
+  border-radius: 50%;
+  padding: 9px;
+  background-color: rgba(128, 128, 128, 0.883);
+  transition: 0.7s ease-in;
+}
+
+.image-icon .user-icon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+
+.menu-icon{
+  display: none;
+  font-size: 18px;
+  border: 3px solid gray;
+  border-radius: 50%;
+}
+
+
+
+/* Mobile navbar and their classes */
+.mobile-container {
+  display: none;
+  width: 100vw;
+  height: 35vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--iconbgcolor);
+  z-index: 1;
+}
+.mobile-container.active{
+  display: block;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links li {
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.nav-links .menu-icon1 {
+  display: flex;
+  border: 3px solid gray;
+  border-radius: 50%;
+  padding: 8px;
+  background-color: rgba(128, 128, 128, 0.81);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+  transition: 0.7s ease-in;
+}
+
+.nav-links .menu-icon1:hover {
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 16px;
+  padding: 7px;
+  padding-right: 9px;
+  padding-left: 9px;
+  padding-bottom: 6px;
+  background-color: rgba(128, 128, 128, 0.81);
+}
+
+/* Responsive Navbar for different screen */
+@media(max-width:769px){
+  .mobile-container.active{
+    display: none;
+  }
+}
+@media(max-width:1025px){
+  .mobile-container.active{
+    display: none;
+  }
+}
+@media(max-width:1441px){
+  .mobile-container.active{
+    display: none;
+  }
+}
+@media(max-width: 426px) {
+  .mobile-container.active{
+    display: block;
+  }
+  .container {
+    display: flex;
+    width: 100vw;
+    height: 30vh;
+    box-shadow: 0 4px 6px 1px rgba(0, 0, 0, 0.1), 0 2px 4px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  .navi {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top: 3.5rem;
+  }
+   .nav-links{
+    display: flex;
+    flex-direction: row;
+   }
+
+   .nav-links li{
+    position: relative;
+    top:2.2rem;
+   }
+
+  .nav-links .menu-icon1{
+    top: 7rem;
+    right: 12rem;
+    font-size: 12px;
+  }
+  .image-icon .phone-icon{
+    font-size: 14px;
+    top:1rem;
+    right: 8.1rem;
+  }
+
+  .image-icon .user-icon{
+    font-size: 14px;
+    top: 1rem;
+    right:15.1rem;
+  }
+}
+@media(max-width: 376px){
+  .image-icon .user-icon{
+    font-size: 14px;
+    top: 1rem;
+    right:13.7rem;
+  }
+  .image-icon .phone-icon{
+    font-size: 14px;
+    top:1rem;
+    right: 7rem;
+  }
+  .nav-links .menu-icon1{
+    top: 7rem;
+    right: 10.5rem;
+    font-size: 12px;
+  }
+}
+
+@media(max-width: 321px){
+  .image-icon .user-icon{
+    font-size: 14px;
+    top: 1rem;
+    right:12.2rem;
+  }
+  .image-icon .phone-icon{
+    font-size: 14px;
+    top:1rem;
+    right: 5.4rem;
+  }
+  .nav-links .menu-icon1{
+    top: 7rem;
+    right: 9.3rem;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Nunito", "sans-serif";
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bgcolor: whitesmoke;
+  --themecolor: #09d6bb;
+  --sidebgcolor: #0e1722;
+  --textcolor: #ffffff;
+  --iconbgcolor: #202647;
+  --navcolor: #808080eb;
+}
+
+.total {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 300px;
+  background-color: var(--iconbgcolor);
+  padding: 20px;
+}
+
+.total > div {
+  flex: 1 1 200px; /* Flex-grow, flex-shrink, and flex-basis */
+  margin: 10px;
+}
+
+.contact h2, .knowus h2, .feature h2, .help h2 {
+  font-family: Poppins, sans-serif;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.contact p, .knowus p, .feature p, .help p {
+  font-size: 1.1rem;
+  color: rgba(245, 245, 245, 0.84);
+  padding: 5px 0;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+.icon1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.icon1 svg {
+  margin: 0 10px;
+  font-size: 1.3rem;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .total {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .total > div {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}
